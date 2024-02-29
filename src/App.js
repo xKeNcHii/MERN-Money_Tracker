@@ -48,6 +48,7 @@ function addTransaction(ev) {
   });
 }
 
+
 let balance = 0;
 for(const transaction of transactions) {
   balance += transaction.price;
@@ -57,9 +58,14 @@ balance = balance.toFixed(2);
 const fraction = balance.split('.')[1];
 balance = balance.split('.')[0];
 
+
+
   return (
     <main>
-      <h1 className={''+(balance<0?'red':'green')}>${balance}<span>{fraction}</span></h1>
+      <h1 className={''+(balance<0?'red':'green')}>
+        ${balance}
+        <span>{fraction}</span>
+      </h1>
       <form onSubmit={addTransaction}>
         <div className='basic'>
           <input 
@@ -94,9 +100,10 @@ balance = balance.split('.')[0];
             <div className='description'>{transaction.description}</div>
           </div>
           <div className='right'>
-            <div className={'price ' +(transaction.price<0?'red':'green')}>
-              {transaction.price}
+            <div className={'price ' + (transaction.price < 0 ? 'red' : 'green')}>
+              {transaction.price >= 0 ? '+' + transaction.price : transaction.price}
             </div>
+
             <div className='datetime'>{transaction.datetime}</div>
           </div>
         </div>
