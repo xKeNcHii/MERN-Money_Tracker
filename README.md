@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# MERN Money Tracker App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The MERN Money Tracker App is a simple web application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. It helps users track their spending, save money, and gain financial insight.
 
-## Available Scripts
+If you're new to app development or looking to start tracking your money more effectively, this project provides a great opportunity to learn the basics of building a MERN Money Tracker App.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Track your transactions and monitor your balance.
+- Display transactions fetched from the MongoDB database.
+- Calculate and display balance based on the transactions.
+- Positive numbers are displayed with a "+" sign at the start.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tutorial
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+I learned how to build this app by following the tutorial: [Build a MERN Money Tracker App | Simple mern app tutorial for beginners](https://youtu.be/aD1c_YmHsFg?list=PLChiukrA-RMOEB1PRQqB1NITIRsDz9pIN).
 
-### `npm test`
+## Deployment
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The app is deployed on Vercel, and you can access it [here](https://mern-money-tracker-xuanqi.vercel.app/).
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository to your local machine:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+git clone https://github.com/xKeNcHii/MERN-Money_Tracker
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Navigate to the project directory:
 
-### `npm run eject`
+```
+cd money-tracker
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Install dependencies for both the client and server:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Set up the environment variables:
 
-## Learn More
+1. Create a .env file in the "api" directory.
+2. Define the MONGO_URL variable with the MongoDB connection string.
+3. Create a .env file in the project directory.
+4. Define the REACT_APP_API_URL variable with the backend api url.
+   
+Start the server:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+cd api
+nodemon index.html
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Start the React development server:
+```
+cd money-tracker
+npm start
+```
 
-### Code Splitting
+Open your web browser and navigate to http://localhost:3000 to access the application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Contributing
 
-### Analyzing the Bundle Size
+Contributions are welcome! Please fork the repository and submit a pull request.
+License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This project is licensed under the MIT License - see the LICENSE file for details.
+Acknowledgements
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thanks to the tutorial creator for providing a detailed guide on building a MERN Money Tracker App.
