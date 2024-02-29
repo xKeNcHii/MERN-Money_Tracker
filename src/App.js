@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import './App.css';
-import { set } from 'mongoose';
 
 function App() {
   const [name, setName] = useState('');
@@ -21,9 +20,17 @@ function App() {
 
 function addTransaction(ev) {
   ev.preventDefault();
+
+  // Check if any of the required fields is empty
+  if (!name || !datetime || !description) {
+    console.error('All fields are required.');
+    return;
+  } 
+
   const url = process.env.REACT_APP_API_URL+'/transaction';
   const price = name.split(' ')[0];
   console.log(url);
+
   fetch(url, {
     method: 'POST',
     headers: {
