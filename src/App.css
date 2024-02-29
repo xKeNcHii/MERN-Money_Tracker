@@ -18,6 +18,14 @@ h1{
   margin: 0;
 }
 
+h1 span{
+  color: #888;
+  font-size: 1rem;
+  vertical-align: top;
+  display: inline-block;
+  margin-top: 6px;
+}
+
 form {
   margin-top: 20px;
 }
@@ -78,11 +86,11 @@ div.right{
   text-align: right;
 }
 
-div.price.green{
+div.price.green, h1.green, h1.green span{
   color: #1c1;
 }
 
-div.price.red{
+div.price.red, h1.red, h1.red span{
   color: #c11;
 }
 
