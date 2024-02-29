@@ -42,11 +42,15 @@ function addTransaction(ev) {
       datetime,
       description})
     }).then(response => {
-      response.json().then(json => {
-        console.log('result', json);
-      });
-  });
-}
+      if (response.ok) {
+        window.location.reload(); // Refresh the page on successful POST
+      } else {
+        console.error('Failed to add transaction.');
+      }
+    }).catch(error => {
+      console.error('Error occurred while adding transaction:', error);
+    });
+  }
 
 
 let balance = 0;
