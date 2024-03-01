@@ -1,4 +1,5 @@
 # MERN Money Tracker App
+![Uploading image.png…]()
 
 The MERN Money Tracker App is a simple web application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. It helps users track their spending, save money, and gain financial insight.
 
